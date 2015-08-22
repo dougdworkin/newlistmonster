@@ -106,7 +106,6 @@ main {
 header {
 	width: 760px;
 	margin: auto;
-	text-align: center;
 	padding-top: .75em;
 }
 
@@ -116,6 +115,7 @@ header > img {
 	padding-right: 1em;
 	padding-bottom: .75em;
 	padding-top: .25em;
+	margin-left: 2em;
 }
 
 header h1 {
