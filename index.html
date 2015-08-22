@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<!-- Adobe Type Kit scripts
+	<script src="//use.typekit.net/rrg0mbf.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>  -->
+
+	<!-- font notes
+	.tk-ff-prater-sans-web 
+	h1.Prater 400 & 700
+
+	.tk-futura-pt-condensed
+
+	 font-family: "futura-pt-condensed",sans-serif; 400 & 700
+  	-->
+
+	<!-- Google font link  -->
+  	<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+
+  	<!-- font notes
+  	font-family: 'Open Sans', sans-serif;
+  	-->
+
+  	<link rel="stylesheet" type="text/css" href="css/mainStyles.css">
+
+	<title>List Monster</title>
+</head>
+<body>
+	
+	<div id="topBar">
+		<header>
+			<img src="img/logo_circle03.svg" alt="image of the list monster">
+			<h1>List Monster</h1>
+		</header>
+	</div>
+
+
+<main>
+	<form id="mainInput">
+		<fieldset>
+			
+			<input class="text" type="text" name="listEnter" value="Enter an Item">
+			<input class="enter" type="submit" name="submit" value="&nbsp">			
+
+
+
+	<ul class="listHolder">
+		<li class="item">
+			<img class="grip" src="img/gripper02.svg" alt="item can be reordered">	
+			<div class="listItem">
+				<input type="checkbox" id="checkbox1" name="itemChecker" value="1">
+				<label for="checkbox1">Bread</label>
+			</div>
+			<div class="delete"></div>	
+		</li>
+		<li class="item">
+			<img class="grip" src="img/gripper02.svg" alt="item can be reordered">	
+			<div class="listItem">
+				<input type="checkbox" id="checkbox2" name="itemChecker" value = "2">
+				<label for="checkbox2">Milk</label>
+			</div>
+			<div class="delete"></div>	
+		</li>
+		<li class="item">
+			<img class="grip" src="img/gripper02.svg" alt="item can be reordered">	
+			<div class="listItem">
+				<input type="checkbox" id="checkbox3" name="itemChecker" value="3">
+				<label for="checkbox3">Bananas</label>
+				</div>
+				<div class="delete"></div>	
+		</li>
+		<li class="item">
+			<img class="grip" src="img/gripper02.svg" alt="item can be reordered">
+			<div class="listItem">
+				<input type="checkbox" id ="checkbox4" name="itemChecker" value="4" checked="checked">
+				<label for="checkbox4">Chocolate Cake</label>
+			</div>
+			<div class="delete"></div>	
+		</li>
+	</ul>	
+
+	<button id="emailB" type="button">Email List</button>
+
+	<button id="printB" type="button">Print list</button>
+
+
+		</fieldset>
+	</form>	
+
+	<form id="emailForm">
+		<fieldset>
+			<input class="text" type="text" name="email" value="Enter an email address">
+			
+			<input class="sendEmail" type="submit" name="submit" value="Send List">	
+
+		</fieldset>
+	</form>
+
+</main>
+	
+</body>
+</html>

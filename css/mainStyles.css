@@ -1,0 +1,344 @@
+
+/* ******************************************
+	Eric Meyer Reset
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+****************************************** */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ******************************************
+	Set up Boxsizing: BorderBox 
+****************************************** */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+
+/* ******************************************
+	Clearfix 
+****************************************** */
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+
+/* ******************************************
+	General Styles
+****************************************** */
+
+main {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+#topBar {
+	background-color: #642b83;
+	height: 173px;
+	border-bottom: solid 7px #4b0049;
+	margin: 0;
+	box-shadow: 4px 4px 10px 3px #ccc;
+}
+
+header {
+	width: 760px;
+	margin: auto;
+	text-align: center;
+	padding-top: .75em;
+}
+
+header > img {
+	height: 9.5em;
+	float: left;
+	padding-right: 1em;
+	padding-bottom: .75em;
+	padding-top: .25em;
+}
+
+header h1 {
+	font-family:'Oswald', sans-serif;
+	color: white;
+	font-size: 7em;
+	padding-top: .17em;
+}
+
+main {
+	
+}
+
+form#mainInput {
+	display: block;
+	max-width:588px;
+	margin: auto;
+	margin-top: 2em;
+
+}
+
+form#mainInput input.text {
+	width: 90%;
+	height: 2.25em;
+	border: solid 3px #662d91;
+	color: #bf95b3;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+	font-weight: 700;
+	padding:.5em;
+	border-radius: 10px;
+	vertical-align: bottom;
+	box-shadow: inset -1px 1px 7px #777;
+}
+
+form#mainInput input.enter {
+	width: 7.5%;
+	height: 3.25em;
+	color: #662d91;
+	border-radius: 50%;
+	background-color: white;
+	cursor: pointer;
+	border:solid 3px #662d91;
+	margin-top: .5em;
+	float: right;
+	background: url(../img/plus_purple08.svg);
+	background-size: 100%;	
+	}
+
+form#mainInput input.enter:hover {
+	background-color: #bf95b3;
+	background-image: url(../img/plus_white08.svg);
+}
+
+
+ul.listHolder {
+	margin: 2em auto;
+	width:36em;
+	border-top: solid 2px #98cbe1;
+}
+
+ul.listHolder li {
+	border-bottom: solid 2px #98cbe1;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+	height: 52px;
+	position: relative;
+}
+
+ul.listHolder li > img.grip {
+	height:34px;
+	width: 23px;
+	position: absolute;
+	cursor: move;
+	margin-top:.25em;
+}
+
+ul.listHolder li > div.listItem {
+	display: inline-block;
+	margin-left: 1.5em;
+	padding-top: .5em
+}
+
+ul.listHolder li input {
+	border: solid 1px #0054a6;
+}
+
+
+ul.listHolder li:hover {
+	color: #943c7d;
+	background-color: #deeef5 ;
+}
+
+
+ul.listHolder li.hover {
+	color: #943c7d;
+	background-color: #deeef5 ;
+}
+
+
+
+
+input[type=checkbox]:not(old) {
+ 	width: 10px;
+	margin: 0;
+  	padding: 0;
+  	opacity: 0;
+  	cursor: pointer;
+
+}
+
+input[type=checkbox]:not(old) + label {
+	display: inline-block;
+	margin-left: -20px;
+	padding-left: 40px;
+	background: url(../img/checkBox01-02.png) no-repeat 0 0;
+ 	line-height: 28px;
+ 	cursor: pointer;
+ }
+
+input[type=checkbox]:not(old):checked + label{
+  background-position : 0 -33px;
+}
+
+.listHolder label{
+	position: relative;
+}
+
+
+input:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    margin-top: -1px; /* height/2 */
+    width: 100%;
+    height: 3px; /* Adjust */
+    background: #da6d33;
+   /* -webkit-transform: rotateZ(-10deg);
+    -moz-transform: rotateZ(-10deg); */
+}
+
+div.delete {
+	background: url(../img/trashCan07Blue.svg) no-repeat 0 0;
+	position: absolute;
+	width: 20px;
+	height:30px;
+	top:10px;
+	right:15px;
+}
+
+ul.listHolder li:hover div.delete, .checkedState {
+	background: url(../img/trashCan01Purple.svg) no-repeat 0 0;
+	cursor: pointer;
+}
+
+
+
+/* ******************************************
+	email an d pront buttons
+****************************************** */
+
+
+button#emailB, button#printB {
+	background-color: #84579c;
+	color: white;
+	border-radius: 10px;
+	border: 0;
+	font-size: 1.75em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	padding: .25em .75em;
+}
+
+ button#printB {
+ 	float: right;
+}
+
+button#emailB:hover, button#printB:hover {
+	background-color: #0054a6;
+	cursor: pointer;
+}
+
+
+form#emailForm {
+	max-width:588px;
+	margin: auto;
+	margin-top: 2em;
+	background-color: #0054a6;
+	border-radius: 10px;
+	padding: 2.25em;
+	margin-bottom:2em;	
+}
+
+input.text {
+	width: 100%;
+	border: none;
+	color: #bf95b3;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+	font-weight: 700;
+	padding:.5em;
+	border-radius: 10px;
+	vertical-align: bottom;
+	box-shadow: inset -1px 1px 7px #777;
+
+}
+
+input.sendEmail {
+	display: block;
+	background-color: #6dcff6;
+	color: white;
+	border: none;
+	font-size: 1.75em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	padding: .25em 1.5em;
+	border-radius: 10px;
+	margin-top: 1.25em
+}
+
+input.sendEmail:hover {
+	background-color: #84579c;
+	cursor: pointer;
+}
