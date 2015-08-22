@@ -120,8 +120,9 @@ header > img {
 
 header h1 {
 	font-family:'Oswald', sans-serif;
+	font-size: 700;
 	color: white;
-	font-size: 7em;
+	font-size: 6em;
 	padding-top: .17em;
 }
 
