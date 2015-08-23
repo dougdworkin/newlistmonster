@@ -142,7 +142,7 @@ form#mainInput input.text {
 	width: 92%;
 	height: 2.25em;
 	border: solid 3px #662d91;
-	color: #bf95b3;
+	color: #642b83;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5em;
 	font-weight: 700;
@@ -151,6 +151,25 @@ form#mainInput input.text {
 	vertical-align: bottom;
 	box-shadow: inset -1px 1px 7px #777;
 }
+
+/* style placeholder text */
+::-webkit-input-placeholder {
+   color: #bf95b3;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #bf95b3;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #bf95b3; 
+}
+
+:-ms-input-placeholder {  
+   color: #bf95b3;  
+}
+/* end style placeholder text */
+
 
 form#mainInput input.enter {
 	width: 3.25em;
@@ -201,7 +220,7 @@ ul.listHolder li > div.listItem {
 	padding-top: .5em
 }
 
-ul.listHolder li input {
+ul.listHolder li input[type="checkbox"] {
 	border: solid 1px #0054a6;
 }
 
@@ -260,7 +279,7 @@ input:checked + label:after {
     -moz-transform: rotateZ(-10deg); */
 }
 
-div.delete {
+/*div.delete {
 	background: url(../img/trashCan07Blue.svg) no-repeat 0 0;
 	position: absolute;
 	width: 20px;
@@ -272,12 +291,26 @@ div.delete {
 ul.listHolder li:hover div.delete, .checkedState {
 	background: url(../img/trashCan01Purple.svg) no-repeat 0 0;
 	cursor: pointer;
+} */
+
+input.delete {
+	background: url(../img/trashCan07Blue.svg) no-repeat 0 0;
+	position: absolute;
+	width: 20px;
+	height:30px;
+	top:10px;
+	right:15px;
+	border: none;
+	color: rgba(255, 255, 255, 0);
 }
 
-
+ul.listHolder li:hover input.delete, .checkedState {
+	background: url(../img/trashCan01Purple.svg) no-repeat 0 0;
+	cursor: pointer;
+}
 
 /* ******************************************
-	email an d pront buttons
+	email and print buttons
 ****************************************** */
 
 
@@ -315,7 +348,7 @@ form#emailForm {
 input.text {
 	width: 100%;
 	border: none;
-	color: #bf95b3;
+	color: #642b83;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5em;
 	font-weight: 700;

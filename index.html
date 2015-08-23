@@ -6,7 +6,7 @@
 	<!-- Google font link  
 	font-family: 'Oswald', sans-serif;-->
 
-  	<link href='https://fonts.googleapis.com/css?family=Oswald:700&text=List%20Monster' rel='stylesheet' type='text/css'>
+  	<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 
   	<!-- font notes
   	font-family: 'Open Sans', sans-serif;
@@ -31,8 +31,8 @@
 	<form id="mainInput">
 		<fieldset>
 			
-			<input class="text" type="text" name="listEnter" value="Enter an Item">
-			<input class="enter" type="submit" name="submit" value="&nbsp">			
+			<input class="text" type="text" name="listEnter" placeholder="Enter an Item">
+			<input class="enter" type="submit" name="submit" value="" >			
 
 
 
@@ -43,31 +43,31 @@
 				<input type="checkbox" id="checkbox1" name="itemChecker" value="1">
 				<label for="checkbox1">Bread</label>
 			</div>
-			<div class="delete"></div>	
+			<input class="delete" type="submit" name="delete" value="delete Item">	
 		</li>
 		<li class="item">
 			<img class="grip" src="img/gripper02.svg" alt="item can be reordered">	
 			<div class="listItem">
 				<input type="checkbox" id="checkbox2" name="itemChecker" value = "2">
 				<label for="checkbox2">Milk</label>
-			</div>
-			<div class="delete"></div>	
+			</div>	
+			<input class="delete" type="submit" name="delete" value="delete Item">	
 		</li>
 		<li class="item">
 			<img class="grip" src="img/gripper02.svg" alt="item can be reordered">	
 			<div class="listItem">
 				<input type="checkbox" id="checkbox3" name="itemChecker" value="3">
 				<label for="checkbox3">Bananas</label>
-				</div>
-				<div class="delete"></div>	
+			</div>	
+			<input class="delete" type="submit" name="delete" value="delete Item">		
 		</li>
 		<li class="item">
 			<img class="grip" src="img/gripper02.svg" alt="item can be reordered">
 			<div class="listItem">
 				<input type="checkbox" id ="checkbox4" name="itemChecker" value="4" checked="checked">
 				<label for="checkbox4">Chocolate Cake</label>
-			</div>
-			<div class="delete"></div>	
+			</div>	
+			<input class="delete" type="submit" name="delete" value="delete Item">		
 		</li>
 	</ul>	
 
@@ -81,7 +81,7 @@
 
 	<form id="emailForm">
 		<fieldset>
-			<input class="text" type="text" name="email" value="Enter an email address">
+			<input class="text" type="text" name="email" placeholder="Enter an email address">
 			
 			<input class="sendEmail" type="submit" name="submit" value="Send List">	
 
