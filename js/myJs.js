@@ -18,7 +18,7 @@ function addListItem() {
 		//adds the item to the list	
 		$('div.noItemText').remove();	
 		$('ul.listHolder').append(
-			'<li class="item">' +
+			'<li class="item, ui-state-default">' +
 			grippy +
 			'<div class="listItem">' +
 			'<label>' +
@@ -39,6 +39,11 @@ function addListItem() {
 		if($('ul.listHolder li').length >= 1){
 			$('ul.listHolder').css('borderTop','solid 2px #98cbe1');
 		}
+
+			$(function() {
+  			  $( "#sortable" ).sortable();
+  			  $( "#sortable" ).disableSelection();
+  			});
 	}
 }
 
