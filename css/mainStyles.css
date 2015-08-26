@@ -128,7 +128,7 @@ header h1 {
 
 
 
-div.mainInput {
+form#mainInput {
 	display: block;
 	max-width:588px;
 	margin: auto;
@@ -136,7 +136,7 @@ div.mainInput {
 
 }
 
-div.mainInput input.text {
+form#mainInput input.text {
 	width: 92%;
 	height: 2.25em;
 	border: solid 3px #662d91;
@@ -169,7 +169,7 @@ div.mainInput input.text {
 /* end style placeholder text */
 
 
-div.mainInput input.enter {
+form#mainInput input.enter {
 	width: 3.25em;
 	height: 3.25em;
 	color: #662d91;
@@ -184,7 +184,7 @@ div.mainInput input.enter {
 	color: rgba(255, 255, 255, 0);
 	}
 
-div.mainInput input.enter:hover {
+form#mainInput input.enter:hover {
 	background-color: #bf95b3;
 	background-image: url(../img/plus_white08.svg);
 }

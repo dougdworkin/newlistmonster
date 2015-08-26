@@ -40,8 +40,10 @@ function addListItem() {
 
 // adds item if enter is pressed
 function enterListItem(event) {
+
 		if(event.keyCode == 13) {
 		addListItem();
+		event.preventDefault(); // Added by Ben
 		};
 	}
 
