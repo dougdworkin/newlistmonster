@@ -18,16 +18,18 @@ function addListItem() {
 		//adds the item to the list	
 		$('div.noItemText').remove();	
 		$('ul.listHolder').append(
-			'<li class="item">' 
-			+ grippy 
-			+'<div class="listItem">' 
-			+ '<input type="checkbox" class="checkbox1" name="itemChecker">'
-			+ '<label>'
-			+ text 
-			+ '</label>'
-			+ '</div>' 
-			+ trashCan 
-			+'</li>'
+			'<li class="item">' +
+			grippy +
+			'<div class="listItem">' +
+			'<label>' +
+			'<input type="checkbox" class="checkbox1" name="itemChecker">' +
+			'<span>' +
+			text +
+			'</span>' +
+			'</label>' +
+			'</div>' +
+			trashCan +
+			'</li>'
 			);
 		$('#text').val('');
 		//adds buttons if not visisble	

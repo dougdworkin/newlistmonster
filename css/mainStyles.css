@@ -324,7 +324,7 @@ input[type=checkbox]:not(old) {
 
 }
 
-input[type=checkbox]:not(old) + label {
+input[type=checkbox]:not(old) + span {
 	display: inline-block;
 	margin-left: -20px;
 	padding-left: 40px;
@@ -334,25 +334,25 @@ input[type=checkbox]:not(old) + label {
  	cursor: pointer;
  }
 
-input[type=checkbox]:not(old):checked + label{
+input[type=checkbox]:not(old):checked + span{
   background-position : 0 -33px;
 }
 
 
 
 
-input:checked + label:after {
+/*input:checked + label:after {
     content: "";
     position: absolute;
     left: 30px;
     top: 50%;
-    margin-top: -1px; /* height/2 */
+    margin-top: -1px; 
     width: 50%;
-    height: 3px; /* Adjust */
+    height: 3px;
     background: #da6d33;
-   /* -webkit-transform: rotateZ(-10deg);
-    -moz-transform: rotateZ(-10deg); */
-}
+   -webkit-transform: rotateZ(-10deg);
+    -moz-transform: rotateZ(-10deg);
+} */
 
 
 
