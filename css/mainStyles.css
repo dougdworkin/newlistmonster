@@ -418,7 +418,7 @@ button#emailB:hover, button#printB:hover {
 	color: white;
 }
 
-input#text {
+input.text {
 	width: 100%;
 	border: none;
 	color: #642b83;
