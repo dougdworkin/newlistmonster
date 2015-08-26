@@ -126,9 +126,11 @@ header h1 {
 	padding-top: .17em;
 }
 
+main {
+	
+}
 
-
-div.mainInput {
+form#mainInput {
 	display: block;
 	max-width:588px;
 	margin: auto;
@@ -136,7 +138,7 @@ div.mainInput {
 
 }
 
-div.mainInput input.text {
+form#mainInput input.text {
 	width: 92%;
 	height: 2.25em;
 	border: solid 3px #662d91;
@@ -169,7 +171,7 @@ div.mainInput input.text {
 /* end style placeholder text */
 
 
-div.mainInput input.enter {
+form#mainInput input.enter {
 	width: 3.25em;
 	height: 3.25em;
 	color: #662d91;
@@ -184,58 +186,17 @@ div.mainInput input.enter {
 	color: rgba(255, 255, 255, 0);
 	}
 
-div.mainInput input.enter:hover {
+form#mainInput input.enter:hover {
 	background-color: #bf95b3;
 	background-image: url(../img/plus_white08.svg);
-}
-
-/*no item entered warning box */
-
-div.noItemText {
-	color: #4b0049;
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;	
-	font-weight: 700;
-	font-size: 	1.1em;
-	padding: .5em;
-	position: relative;	
-	border:  solid 1px #4b0049;
-	border-radius: 7px;
-	width:75%;
-	margin:auto;
-	margin-top: .75em;
-	
-}
-
-div.noItemText > button.close {
-	color: #c5a0bb;
-	font-size: 1em;
-	position: absolute;	
-	right: 3px;
-	top: 1px;	
-	background-color:white;
-	border:none;
-	
-}
-
-div.noItemText:hover {
-	background-color: #c5a0bb;
-
-} 
-
-div.noItemText:hover > button.close {
-	color: #4b0049;
-	background-color: #c5a0bb;
 }
 
 
 ul.listHolder {
 	margin: 2em auto;
 	width:36em;
-	
+	border-top: solid 2px #98cbe1;
 }
-
-
 
 ul.listHolder li {
 	border-bottom: solid 2px #98cbe1;
@@ -284,13 +245,10 @@ input.delete {
 	color: rgba(255, 255, 255, 0);
 }
 
-ul.listHolder li:hover input.delete {
+ul.listHolder li:hover input.delete, .checkedState {
 	background: url(../img/trashCan01Purple.svg) no-repeat 0 0;
 	cursor: pointer;
 }
-
-
-/* check boxes and checked state */
 
 
 
@@ -309,10 +267,10 @@ input[type=checkbox]:not(old) {
 }
 
 input[type=checkbox]:not(old) + label {
-	display: inline-block;
-	padding-left: 51px;
+	display: inline-block;
+	margin-left: -20px;
+	padding-left: 40px;
 	background: url(../img/checkBox01-02.png) no-repeat 0 0;
-
  	line-height: 28px;
  	cursor: pointer;
  }
@@ -321,7 +279,9 @@ input[type=checkbox]:not(old):checked + label{
   background-position : 0 -33px;
 }
 
-
+.listHolder label{
+	position: relative;
+}
 
 
 input:checked + label:after {
@@ -337,6 +297,20 @@ input:checked + label:after {
     -moz-transform: rotateZ(-10deg); */
 }
 
+/*div.delete {
+	background: url(../img/trashCan07Blue.svg) no-repeat 0 0;
+	position: absolute;
+	width: 20px;
+	height:30px;
+	top:10px;
+	right:15px;
+}
+
+ul.listHolder li:hover div.delete, .checkedState {
+	background: url(../img/trashCan01Purple.svg) no-repeat 0 0;
+	cursor: pointer;
+} */
+
 
 
 
@@ -344,13 +318,6 @@ input:checked + label:after {
 	email and print buttons
 ****************************************** */
 
-#buttons {
-	display: none;		
-}
-
-form#emailForm {
-	display: none;		
-}
 
 button#emailB, button#printB {
 	background-color: #84579c;
@@ -373,32 +340,14 @@ button#emailB:hover, button#printB:hover {
 }
 
 
-#emailForm {
+form#emailForm {
 	max-width:588px;
 	margin: auto;
 	margin-top: 2em;
 	background-color: #0054a6;
 	border-radius: 10px;
 	padding: 2.25em;
-	margin-bottom:2em;
-	position: relative;	
-}
-
-#emailForm button.emailClose {
-	color: #6dcff6;
-	background-color: #0054a6;
-	border: none;
-	font-size: 1.5em;
-	font-weight: 700;
-	position: absolute;
-	top:5px;
-	right: 5px;
-}
-
-
-#emailForm button.emailClose:hover {
-	cursor: pointer;
-	color: white;
+	margin-bottom:2em;	
 }
 
 input.text {

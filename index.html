@@ -15,6 +15,10 @@
 
   	<link rel="stylesheet" type="text/css" href="css/mainStyles.css">
 
+  	<script type="text/javascript" src='js/jquery-1.11.3.js'></script>
+
+  	<script type="text/javascript" src='js/myJs.js'></script>
+
 	<title>List Monster</title>
 </head>
 <body>
@@ -28,65 +32,43 @@
 
 
 <main>
-	<form id="mainInput">
-		<fieldset>
-			
-			<input class="text" type="text" name="listEnter" placeholder="Enter an Item">
-			<input class="enter" type="submit" name="submit" value="" >			
+	 <!--
+	 <form id="mainInput">
+	<fieldset>
+	-->		
 
+		<div class="mainInput">
 
+			<input class="text" type="text" name="listEnter" autocomplete="off" placeholder="Enter an Item">
+			<input class="enter" type="button" name="submit" value="" >			
 
-	<ul class="listHolder">
-		<li class="item">
-			<img class="grip" src="img/gripper02.svg" alt="item can be reordered">	
-			<div class="listItem">
-				<input type="checkbox" id="checkbox1" name="itemChecker" value="1">
-				<label for="checkbox1">Bread</label>
-			</div>
-			<input class="delete" type="submit" name="delete" value="delete Item">	
-		</li>
-		<li class="item">
-			<img class="grip" src="img/gripper02.svg" alt="item can be reordered">	
-			<div class="listItem">
-				<input type="checkbox" id="checkbox2" name="itemChecker" value = "2">
-				<label for="checkbox2">Milk</label>
+			<ul class="listHolder">
+			</ul>	
+
+			<div id="buttons">
+				<button id="emailB" type="button">Email List</button>
+
+				<button id="printB" type="button">Print list</button>
 			</div>	
-			<input class="delete" type="submit" name="delete" value="delete Item">	
-		</li>
-		<li class="item">
-			<img class="grip" src="img/gripper02.svg" alt="item can be reordered">	
-			<div class="listItem">
-				<input type="checkbox" id="checkbox3" name="itemChecker" value="3">
-				<label for="checkbox3">Bananas</label>
-			</div>	
-			<input class="delete" type="submit" name="delete" value="delete Item">		
-		</li>
-		<li class="item">
-			<img class="grip" src="img/gripper02.svg" alt="item can be reordered">
-			<div class="listItem">
-				<input type="checkbox" id ="checkbox4" name="itemChecker" value="4" checked="checked">
-				<label for="checkbox4">Chocolate Cake</label>
-			</div>	
-			<input class="delete" type="submit" name="delete" value="delete Item">		
-		</li>
-	</ul>	
-
-	<button id="emailB" type="button">Email List</button>
-
-	<button id="printB" type="button">Print list</button>
 
 
-		</fieldset>
+		</div>
+		<!-- 
+	</fieldset>
 	</form>	
-
+	-->
 	<form id="emailForm">
 		<fieldset>
 			<input class="text" type="text" name="email" placeholder="Enter an email address">
 			
-			<input class="sendEmail" type="submit" name="submit" value="Send List">	
+			<input class="sendEmail" type="button" name="submit" value="Send List">	
+
+			<button type="button" class="emailClose" aria-label="Close">×</button>
+
 
 		</fieldset>
 	</form>
+	
 
 </main>
 	
