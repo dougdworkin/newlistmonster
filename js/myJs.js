@@ -5,7 +5,7 @@ var trashCan = '<input class="delete" type="button" name="delete" value="delete 
 
 //function to create list item
 function addListItem() {
-	var text = $('.text').val();
+	var text = $('#text').val();
 
 	if(text == false ){
 		//adds a message if no item is entered
@@ -13,7 +13,7 @@ function addListItem() {
 				('<div class="noItemText"><p>List Monster doesn\'t like empty calories!</p>' +
 				'<p>Please enter some text.</p> <button type="button" class="close" '+
 				'aria-label="Close">×</button></div>');
-		$('.text').val('');
+		$('#text').val('');
 	}else {	
 		//adds the item to the list	
 		$('div.noItemText').remove();	
@@ -29,7 +29,7 @@ function addListItem() {
 			+ trashCan 
 			+'</li>'
 			);
-		$('.text').val('');
+		$('#text').val('');
 		//adds buttons if not visisble	
 		if ('$(#buttons).css("display","none")') {
 			$('#buttons').fadeIn(2000).css('display', 'block');
@@ -91,11 +91,11 @@ $(document).ready(function(){
 $('.enter').on('click', addListItem);
 
 //readies the input field to add item if enter os pressed 
-$('.text').on('keydown', enterListItem);
+$('#text').on('keydown', enterListItem);
 
 //readies the document to run remove function on trashcan click
 $(document).on('click', 'input.delete', deleteItem)
-.on('click', 'div.noItemText, input.text',removeNoEnterBox)
+.on('click', 'div.noItemText, input#text',removeNoEnterBox)
 //readies the document to open and close email form
 .on('click', 'button#emailB', showEmailBox)
 .on('click', 'button.emailClose', closeEmailBox)

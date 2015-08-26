@@ -136,7 +136,7 @@ form#mainInput {
 
 }
 
-form#mainInput input.text {
+form#mainInput input#text {
 	width: 92%;
 	height: 2.25em;
 	border: solid 3px #662d91;
@@ -403,7 +403,7 @@ button#emailB:hover, button#printB:hover {
 	color: white;
 }
 
-input.text {
+input#text {
 	width: 100%;
 	border: none;
 	color: #642b83;
