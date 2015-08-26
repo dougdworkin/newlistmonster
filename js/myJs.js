@@ -10,7 +10,9 @@ function addListItem() {
 	if(text == false ){
 		//adds a message if no item is entered
 		$('input.enter').after
-				('<div class="noItemText"><p>List Monster doesn\'t like empty calories!</p><p>Please enter some text.</p> <button type="button" class="close" aria-label="Close">×</button></div>');
+				('<div class="noItemText"><p>List Monster doesn\'t like empty calories!</p>' +
+				'<p>Please enter some text.</p> <button type="button" class="close" '+
+				'aria-label="Close">×</button></div>');
 		$('.text').val('');
 	}else {	
 		//adds the item to the list	
