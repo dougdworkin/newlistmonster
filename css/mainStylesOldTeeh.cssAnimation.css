@@ -86,10 +86,7 @@ hide labels for screen but available to screen readers
 /* ******************************************
 	General Styles
 ****************************************** */
-body {
-	background-color: #fafaf2;
-	position: relative;
-}
+
 
 main {
 	font-family: 'Open Sans', sans-serif;
@@ -245,7 +242,6 @@ ul.listHolder li {
 	font-size: 1.5em;
 	height: 52px;
 	position: relative;
-	background-color:#fdfdfb; 
 }
 
 ul.listHolder li > img.grip {
@@ -298,11 +294,8 @@ ul.listHolder li:hover input.delete {
 
 ul.listHolder li input[type="checkbox"] {
 	border: solid 1px #0054a6;
-
 }
 
-/*HOW CAN I SET UP THE FOCUS FOR THIS?
-*/
 
 input[type=checkbox]:not(old) {
  	width: 30px;
@@ -314,13 +307,12 @@ input[type=checkbox]:not(old) {
 
 }
 
-
-
 input[type=checkbox]:not(old) + span {
 	display: inline-block;
 	margin-left: -20px;
 	padding-left: 40px;
 	background: url(../img/checkBox01-02.png) no-repeat 0 0;
+
  	line-height: 28px;
  	cursor: pointer;
  }
@@ -330,6 +322,20 @@ input[type=checkbox]:not(old):checked + span{
 }
 
 
+
+
+/*input:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    margin-top: -1px; 
+    width: 50%;
+    height: 3px;
+    background: #da6d33;
+   -webkit-transform: rotateZ(-10deg);
+    -moz-transform: rotateZ(-10deg);
+} */
 
 
 
@@ -429,232 +435,77 @@ input.sendEmail:hover {
 
 
 
-/*TEETH ANIMATION STYLES*/
+/*TESTING STYLES*/
+
+li {
+	position: relative;
+}
 
 li div.teethUp, li div.teethDown {
 	width: 100%; 
 	height: 100%;
 	position: absolute;
-	display: none;
+	
+
 }
 
 
-div.teethUp.animateIt {
-	display: block;
+
+li div.teethUp {
+	/*background-color: green;*/
+	
+}
+
+
+
+li div.teethUp {
+	
 	background: url(../img/tooth_Up_01.svg);
 	background-repeat: repeat-x;
 	z-index: 10;
-	background-position: 0 50px;
-	animation: teethUp .25s ease-in,
-		teethUpPause .5s .25s,
-		teethUpDown .25s .5s;
+	
+	transition-delay: 0s;
+	transition-duration: .25s;
+	transition-property: background-position-y;
+	transition-timing-function: ease-in-out;
+
+	background-position-y: 50px;
+	
+	
+	
 }
 
-li div.teethDown.animateIt {
-	display: block;
+li:hover div.teethUp {
+background-position-y: 0px;
+z-index: 11;
+
+}
+
+li div.teethDown {
 	background: url(../img/tooth_Down_01.svg);
 	background-repeat: repeat-x;
-	z-index: 11;
-	background-position: -88px 50px; 
-	animation: teethDown .25s ease-in,
-		teethDownPause .5s .25s,
-		teethDownUp .25s .5s;
-}
-
-
-
-
-@keyframes teethUp {
-	0%  {  background-position: 0 50px;}
-	100% { background-position: 0 0px; }
-}
-
-@keyframes teethUpPause {
-	0%  {  background-position: 0px 0px;}
-	100% { background-position: 0px 0px; }
-}
-
-@keyframes teethUpDown {
-	0%  {  background-position: 0px 0px;}
-	100% { background-position: 0px 50px; }
-}
-
-@keyframes teethDown {
-	0%  {  background-position: -88px -50px;}
-	100% { background-position: -88px 0px;  }
-}
-
-@keyframes teethDownPause {
-	0%  {  background-position: -88px 0px;}
-	100% { background-position: -88px 0px; }
-}
-
-@keyframes teethDownUp {
-	0%  {  background-position: -88px 0px;}
-	100% { background-position: -88px -50px;   }
-}
-
-
-div#successMessage {
-	max-width: 500px;
-	margin: auto;
-	text-align: center;
-	margin-top: 3em;
-	display: none;
-}
-
-div#successMessage p:first-child{
-	color: #642b83;
-	font-size: 2em;
-	font-weight: 700;
-	margin-bottom: .5em
-}
-
-/* **************** Monsters********************* */
-
-div#monster01 {
-	position: absolute;
-	right: -200px;
-	top: 300px;
 	
-	height: 225px;
-}
-
-div#monster01 img {
-	height: 225px;
 	
+	transition-delay: 0s;
+	transition-duration: .25s;
+	transition-property: background-position-y;
+	transition-timing-function: ease-in-out;
+
+	background-position-y: -50px;
+	background-position-x:-88px; 
+
+	
+}
+
+li:hover div.teethDown {
+background-position-y: 0px;
+
+
 
 }
 
-div#monster02 img {
-	height: 250px;
-}
-
-div#monster02 {
-	position: absolute;
-	left: -200px;
-	top: 400px;
-}
-
-/*M1 Right Eye*/
-.m1_eyeRight {
-	width:48px; 
-	height:48px; 
-	position:absolute; 
-	border:none; 
-	border-radius:50%;
-	left: 45px;
-}
-
-.m1_pupilRight {
-	width:10px; 
-	height:10px; 
-	left:20px; 
-	top:20px; 
-	border-radius:50%; 
-	background-color: blue;
+/*div.listItem {
+	z-index: -2000;
+	background-color: green;
 	position: relative;
-	}
-
-/*M1 Middle Eye*/
-.m1_eyeRMiddle {
-	width:45px; 
-	height:45px; 
-	position: absolute; 
-	border:none; 
-	border-radius:50%;
-	left: 25px;
-	top: 30px;
-}
-
-.m1_pupilMiddle {
-	width:10px; 
-	height:10px; 
-	left:20px; 
-	top:20px; 
-	border-radius:50%; 
-	background-color: blue;
-	position: relative;
-	}
-
-/*M1 Left Eye*/
-.m1_eyeLeft {
-	width:45px; 
-	height:45px; 
-	position: absolute; 
-	border: none; 
-	border-radius:50%;
-	left: 0px;
-	top: 60px;
-}
-
-.m1_pupilLeft {
-	width:10px; 
-	height:10px; 
-	left:20px; 
-	top:20px; 
-	border-radius:50%; 
-	background-color: blue;
-	position: relative;
-	}
-
-
-/*M2 Right Eye*/
-.m2_eyeRight {
-	width:48px; 
-	height:48px; 
-	position:absolute; 
-	border:none;
-	border-radius:50%;
-	top: 95px;
-	left: 118px;
-}
-
-.m2_pupilRight {
-	width:13px; 
-	height:13px; 
-	left:20px; 
-	top:20px; 
-	border-radius:50%; 
-	background-color: black;
-	position: relative;
-	}
-
-
-/*M2 Left Eye*/
-.m2_eyeLeft {
-	width:48px; 
-	height:48px; 
-	position: absolute; 
-	border: none;  
-	border-radius:50%;
-	left: 90px;
-	top: 52px;
-}
-
-.m2_pupilLeft {
-	width:13px; 
-	height:13px; 
-	left:20px; 
-	top:20px; 
-	border-radius:50%; 
-	background-color: black;
-	position: relative;
-	}
-
-
-/* ************** PRINT STYLES *************** */
-@media print {
-
-	input#text,
-	input.enter,
-	#sortable img,
-	#sortable input,
-	div#buttons,
-	form#emailForm
-	 {
-		display: none;
-	}
-
-
-}
+	}	*/

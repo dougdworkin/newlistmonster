@@ -6,12 +6,12 @@
 	<!-- Google font link  
 	font-family: 'Oswald', sans-serif;-->
 
-  	<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  	<!-- <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 
   	<!-- font notes
   	font-family: 'Open Sans', sans-serif;
-  	-->
-  	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  	
+  	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
 
   	<link rel="stylesheet" type="text/css" href="css/mainStyles.css">
 
@@ -19,6 +19,8 @@
 
 
   	<script type="text/javascript" src='js/jquery-ui.min.js'></script>
+
+  	<script type="text/javascript" src='js/jqeye.js'></script>
 
   	<script type="text/javascript" src='js/myJs.js'></script>
 
@@ -64,13 +66,54 @@
 			<input class="sendEmail" type="button" name="submit" value="Send List">	
 
 			<button type="button" class="emailClose" aria-label="Close">×</button>
-
-
 		</fieldset>
+
 	</form>
+
+	<div id="successMessage">
+		<p>Your list has been sent!</p>
+		<p>(not really, but this will work once I get up to speed with PHP)</p>
+	</div>
 	
+<!-- style="width:50px; height:50px; position:relative; border:1px solid gray; border-radius:25px;"> -->
+
+<!-- style="width:10px; height:10px; left:20px; top:20px; border-radius:5px; background-color:blue; position:relative;" -->
+
 
 </main>
+
+<!-- MONSTERS -->
+	<div id="monster01">
+		    <div class="m1_eyeLeft">
+        		<div class="m1_pupilLeft"></div>
+    		</div>
+
+    		 <div class="m1_eyeRMiddle">
+        		<div class="m1_pupilMiddle"></div>
+    		</div>
+
+    		<div class="m1_eyeRight">
+        		<div class="m1_pupilRight"></div>
+    		</div>
+
+
+			<img src="img/monster_0103.svg" alt="Purple Monster watching">
+
+	</div>
+
+	<div id="monster02">
+
+	 	<div class="m2_eyeLeft">
+    		<div class="m2_pupilLeft"></div>
+		</div>
+
+		<div class="m2_eyeRight">
+    		<div class="m2_pupilRight"></div>
+		</div>
+
+
+		<img src="img/monster_0202.svg" alt="Purple Monster watching">
+	</div>
 	
 </body>
 </html>
