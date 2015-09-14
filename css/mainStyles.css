@@ -441,7 +441,7 @@ li div.teethUp, li div.teethDown {
 
 div.teethUp.animateIt {
 	display: block;
-	background: url(../img/tooth_Up_01.svg);
+	background: url(../img/tooth_up_01.svg);
 	background-repeat: repeat-x;
 	z-index: 10;
 	background-position: 0 50px;
@@ -452,7 +452,7 @@ div.teethUp.animateIt {
 
 li div.teethDown.animateIt {
 	display: block;
-	background: url(../img/tooth_Down_01.svg);
+	background: url(../img/tooth_down_01.svg);
 	background-repeat: repeat-x;
 	z-index: 11;
 	background-position: -88px 50px; 
