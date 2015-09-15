@@ -81,6 +81,7 @@ function removeNoEnterBox () {
 // show email box
 function showEmailBox () {
 	$('#emailForm').fadeIn(2000).css('display', 'block');
+	$('div#successMessage').hide();
 	}
 
 //close email box
@@ -133,7 +134,6 @@ function checkBox () {
 
 // removes the mail form on email button click, clears form, and shows message
 	
-
 	
 	function showEmailSuccess() {
 		var emailtext = $('#emailForm .text').val();
@@ -149,7 +149,8 @@ function checkBox () {
 				$('#emailForm .text').val('');
 			}, 400);
 			event.preventDefault(); 
-
+		}else{
+			event.preventDefault();
 		}
 
 	}
