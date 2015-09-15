@@ -117,7 +117,7 @@ function checkBox () {
 			} else {
 				itemText.unwrap();
 			}
-		}, 1000);
+		}, 500);
 
 	// removes the divs so checkbox is not blocked
 	setTimeout(function() {
