@@ -86,6 +86,10 @@ function showEmailBox () {
 //close email box
 function closeEmailBox () {
 	$('#emailForm').fadeOut('slow');
+	setTimeout(function() {
+		$('#emailForm .text').val('');
+	}, 500);
+
 	}
 
 
