@@ -132,18 +132,28 @@ function checkBox () {
 }
 
 // removes the mail form on email button click, clears form, and shows message
-function showEmailSuccess() {
-	$('form#emailForm').fadeOut('fast');
-	$('div#successMessage').css('display','block').fadeIn('fast');
+	
 
-	setTimeout(function() {
-			$('div#successMessage').fadeOut('slow');
-	 		}, 5500);
-	setTimeout(function() {
-		$('#emailForm .text').val('');
-	}, 400);
+	
+	function showEmailSuccess() {
+		var emailtext = $('#emailForm .text').val();
 
-}
+		if(emailtext != false ){
+			$('form#emailForm').fadeOut('fast');
+			$('div#successMessage').css('display','block').fadeIn('slow');
+
+			setTimeout(function() {
+					$('div#successMessage').fadeOut('slow');
+			 		}, 5500);
+			setTimeout(function() {
+				$('#emailForm .text').val('');
+			}, 400);
+			event.preventDefault(); 
+
+		}
+
+	}
+	
 	
 
 
